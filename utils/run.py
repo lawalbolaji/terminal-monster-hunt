@@ -7,7 +7,7 @@ def run(instructions, isPrompt):
     if(isPrompt):
         result = input(instructions[-1]) ## last message is the prompt
         # validate input provided by game player
-        while(int(result) != 1 or int(result) != 0):
-            result = input(instructions[-1])
+        while(int(result) != 1 and int(result) != 0):
+            result = input("You must enter 1 or 2")
         return result 
     return -1 ## we create a handler for this scenario

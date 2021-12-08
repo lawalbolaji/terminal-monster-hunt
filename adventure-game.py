@@ -1,11 +1,9 @@
 import instructions
-import utils
+from utils.run import run
 import moves
 
 # game flow
 
-win = ['01*****', '1001**']
-
 # intro
-print(utils.run(instructions.start))
+print(run(instructions.start, True))
 
