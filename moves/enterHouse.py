@@ -1,7 +1,5 @@
-from utils import run
+from utils.run import run
+import instructions
 
-def enter_house(weapon):
-    run()
-    if(weapon):
-        return -1 # this indicates a terminal scenario
-    return "next"
+def enter_house():
+    return run(instructions.house, True)
