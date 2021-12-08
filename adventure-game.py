@@ -6,4 +6,3 @@ import moves
 
 # intro
 print(run(instructions.start, True))
-

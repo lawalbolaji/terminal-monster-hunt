@@ -1,4 +1,5 @@
+import random
+
 def beast():
-    # return random beast
-    # gorgon, pirate, huge beast etc
-    return ""
+    options = ["gorgon", "pirate"]
+    return options[random.randint(0,1)]
