@@ -1,1 +1,3 @@
-## terminal text based game in python
+## A text based game on the terminal (python)
+
+### Run python3 adventure-game.py
