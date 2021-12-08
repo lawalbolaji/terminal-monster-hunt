@@ -9,15 +9,14 @@ start = [
     "Rumor has it that a troll is somewhere around here, and has been terrifying the nearby village.",
     "In front of you is a house.",
     "To your right is a dark cave.",
-    "In your hand you hold your trusty (but not very effective) dagger.\n"
-]
+    "In your hand you hold your trusty (but not very effective) dagger.\n"]
 
 decide = [
     "Enter 1 to knock on the door of the house.",
     "Enter 2 to peer into the cave.",
     "What would you like to do?",
     "(Please enter 1 or 2.)",
-    "" # prompt
+    ""  # prompt
 ]
 
 house = [
@@ -25,7 +24,7 @@ house = [
     f"You are about to knock when the door opens and out steps a {current_beast}.",
     f"Eep! This is the {current_beast}'s house!",
     f"The {current_beast} attacks you!",
-    "Would you like to (1) fight or (2) run away?" # prompt
+    "Would you like to (1) fight or (2) run away?"  # prompt
 ]
 
 cave = [
