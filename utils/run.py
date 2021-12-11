@@ -1,18 +1,17 @@
 from utils.printPause import print_pause
+from utils.inputs import valid_input
 
 
-def run(instructions, isPrompt=False, player='', sayHello=False):
+def run(instructions, isPrompt=False, player='', 
+            sayHello=False, options = ['1', '2']):
     animation = 1
     if(sayHello):
         print_pause("Hello " + player + "!", animation)
     if(isPrompt):
         for message in instructions[:-1]:
             print_pause(message, animation)
-        result = input(instructions[-1])  # last message is the prompt
-        # validate input provided by game player
-        while(int(result) != 1 and int(result) != 2):
-            result = input("You must enter 1 or 2")
-        return result
+        # validate input and return player choice
+        return valid_input(instructions[-1], options)
     else:
         for message in instructions:
             print_pause(message, animation)
