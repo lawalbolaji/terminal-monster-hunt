@@ -2,8 +2,8 @@ from utils.printPause import print_pause
 from utils.inputs import valid_input
 
 
-def run(instructions, isPrompt=False, player='', 
-            sayHello=False, options = ['1', '2']):
+def run(instructions, isPrompt=False, player='',
+        sayHello=False, options=['1', '2']):
     animation = 1
     if(sayHello):
         print_pause("Hello " + player + "!", animation)
